@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Gavin Aguiar: Challenge Accepted!</title>
+	<script type="text/javascript" src="js/jquery-1.11.0.js"></script>
+	 <!-- <script type="text/javascript" src="js/jquery_jsonp.js"></script> -->
+	<script type="text/javascript" src="js/challengeJS/challengeJS.js"></script>
+	<link rel="stylesheet" type="text/css" href="styles/theme.css" />
+</head>
+<body onload="init__()">
+<div align="center" style="text-align:center">
+
+	<h3>
+	Gavin Aguiar: Challenge Accepted!<br /><br />
+	<small><i>Here, 100 items (search term: 'boots') are requested using the REST JSONP API. <br />Multiple options for purchase for the user are displayed.<br />You may use the default values supplied in the input fields as a test case.</i></i></small>
+	</h3>
+	<hr />
+
+	<form onsubmit="constrainedSearch(); return false;">
+	Number of items : <br />
+	<input type="text" name="pCount" value="3" id="pCount" required="required" /><br /><br />
+	
+	Total Budget (in USD) : <br />
+	<input type="text" id="pBudget" name="pBudget" value="478" required="required" /><br /><br />
+	
+	<input type="submit" id="prodSubB" value="Get Products"  /><br /><br />
+	</form>
+	<hr/>
+	<div id="pCount" class="pCountClass"></div>
+	
+	<hr />
+	
+	<div id="pOut" class="pOutClass"></div>
+	
+</div>
+
+</body>
+</html>
